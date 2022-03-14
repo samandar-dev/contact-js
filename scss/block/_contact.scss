@@ -1,0 +1,180 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+
+  background: rgb(116, 166, 189);
+}
+
+.con__inner {
+  padding: 60px 200px;
+}
+
+.con__left {
+  width: 500px;
+  height: 520px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+  background: rgb(12, 119, 219);
+}
+
+.con__form {
+  width: 100%;
+  height: auto;
+}
+
+.con__input {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 50px;
+
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+
+  outline: none;
+  border: none;
+
+  border-radius: 30px;
+}
+
+.con__selec {
+  width: 100%;
+  height: 50px;
+
+  margin-bottom: 50px;
+
+  border: none;
+  outline: none;
+  border-radius: 30px;
+
+  font-size: 22px;
+  font-weight: 600;
+  font-family: sans-serif;
+
+  color: rgb(119, 119, 116);
+
+  padding: 0 20px;
+}
+
+.con__form_btn {
+  width: 100%;
+
+  font-size: 22px;
+  font-weight: 700;
+  font-family: sans-serif;
+
+  padding: 10px 0;
+  margin: 0 auto;
+
+  border: none;
+  border-radius: 30px;
+  background: rgb(86, 241, 24);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgb(55, 185, 3);
+  }
+}
+
+.con__right {
+  width: 950px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+  background: rgb(9, 147, 156);
+}
+
+.con__btns-box {
+  width: 100%;
+  height: auto;
+
+  margin-bottom: 30px;
+
+  background: transparent;
+}
+
+.con__btns {
+  width: 30%;
+
+  font-size: 22px;
+  font-weight: 700;
+  font-family: sans-serif;
+
+  padding: 10px 0;
+
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  background: rgb(25, 89, 185);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgb(51, 108, 194);
+  }
+}
+
+.con__list {
+  width: 100%;
+  height: auto;
+
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.con__item {
+  width: 440px;
+  height: auto;
+  padding: 20px;
+}
+
+.con__item-box {
+  width: 410px;
+  height: auto;
+
+  padding: 20px;
+
+  border-radius: 30px;
+  background: rgb(51, 86, 139);
+  overflow: hidden;
+}
+
+.con__icon {
+  margin-right: 25px;
+
+  font-size: 60px;
+  color: #fff;
+}
+
+.ite__tit {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 600;
+
+  color: #fff;
+}
+
+.ite__link {
+  margin-top: 10px;
+
+  font-size: 22px;
+  font-weight: 700;
+  font-family: sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+
+  color: rgb(216, 219, 18);
+
+  &:hover {
+    color: rgb(148, 150, 51);
+  }
+}
