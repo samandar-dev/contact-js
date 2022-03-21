@@ -19,13 +19,14 @@
         <form class="con__form" action="#" id="conForm">
           <input class="con__input" type="text" name="text" id="last" placeholder="Last name" required>
           <input class="con__input" type="text" name="text" id="first" placeholder="First name" required>
-          <input class="con__input" type="number" name="number" id="number" placeholder="Number" required>
 
           <select class="con__selec" id="select" required>
-            <option value="All" id="allVal">All contact</option>
-            <option value="Work" id="workVal">Work contact</option>
-            <option value="Family" id="familyVal">Family contact</option>
+            <option class="values" value="All" id="allVal">Categores</option>
+            <option class="values" value="Work" id="workVal">Work contact</option>
+            <option class="values" value="Family" id="familyVal">Family contact</option>
           </select>
+
+          <input class="con__input" type="number" name="number" id="number" placeholder="Number" required>
 
           <button class="con__form_btn" type="submit" id="addBtn">Add</button>
         </form>
@@ -39,35 +40,9 @@
         </div>
 
         <div class="con__contacts-box">
-          <ul class="con__list d-flex flex-wrap" id="conlist">
-            <li class="con__item">
-              <div class="con__item-box d-flex align-items-center">
-                <div class="con__icon">
-                  <i class='bx bxs-contact'></i>
-                </div>
-
-                <div class="con__names">
-                  <p class="ite__tit">John</p>
-                  <p class="ite__tit">Doe</p>
-                  <a class="ite__link" href="tel:123456789">+998 98 765 43 21</a>
-                </div>
-              </div>
-            </li>
-
-            <li class="con__item">
-              <div class="con__item-box d-flex align-items-center">
-                <div class="con__icon">
-                  <i class='bx bxs-contact'></i>
-                </div>
-
-                <div class="con__names">
-                  <p class="ite__tit">Tom</p>
-                  <p class="ite__tit">Hardy</p>
-                  <a class="ite__link" href="tel:123456789">+998 98 765 43 21</a>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <ul class="con__list row" id="conlistAll"></ul>
+          <ul class="con__list row" id="conlistWork"></ul>
+          <ul class="con__list row" id="conlistFam"></ul>
         </div>
       </div>
     </div>

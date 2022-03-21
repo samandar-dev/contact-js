@@ -3,10 +3,11 @@
   height: 100vh;
 
   background: rgb(116, 166, 189);
+  padding: 60px 50px;
 }
 
 .con__inner {
-  padding: 60px 200px;
+  transform: scale(0.9);
 }
 
 .con__left {
@@ -123,21 +124,23 @@
 
   padding: 0;
   margin: 0;
-
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .con__item {
-  width: 440px;
+  width: 400px;
   height: auto;
-  padding: 20px;
+  padding: 5px;
 }
 
 .con__item-box {
-  width: 410px;
+  position: relative;
+  width: 100%;
   height: auto;
 
-  padding: 20px;
+  padding: 10px 15px;
 
   border-radius: 30px;
   background: rgb(51, 86, 139);
@@ -147,7 +150,7 @@
 .con__icon {
   margin-right: 25px;
 
-  font-size: 60px;
+  font-size: 50px;
   color: #fff;
 }
 
@@ -155,7 +158,7 @@
   margin: 0;
   margin-bottom: 5px;
 
-  font-size: 22px;
+  font-size: 17px;
   font-family: sans-serif;
   font-weight: 600;
 
@@ -163,18 +166,42 @@
 }
 
 .ite__link {
-  margin-top: 10px;
-
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 700;
   font-family: sans-serif;
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease;
 
-  color: rgb(216, 219, 18);
+  color: rgb(82, 212, 89);
 
   &:hover {
-    color: rgb(148, 150, 51);
+    color: rgb(18, 155, 47);
   }
+}
+
+.conn-namee {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  font-size: 16px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: rgb(186, 190, 188);
+}
+
+.remove {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  border-radius: 50% 0% 0% 0%;
+  background: rgb(197, 8, 8);
+  color: #fff;
+
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
 }
