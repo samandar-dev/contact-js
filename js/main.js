@@ -31,12 +31,6 @@ let h_arr = [
     categor: 'Work',
     number: '8 765 43 21',
   },
-  {
-    lastname: 'Jamoliddin',
-    firstname: 'Najmiddinov',
-    categor: 'All',
-    number: '8 765 43 21',
-  }
 ]
 
 let foreachh = h_arr.forEach((e) => {
@@ -56,9 +50,6 @@ let foreachh = h_arr.forEach((e) => {
   </div>
   </div>`;
 
-  if (e.categor == 'All') {
-    conlistAll.appendChild(li_i);
-  }
   if (e.categor == 'Work') {
     conlistWork.appendChild(li_i);
   }
@@ -107,21 +98,19 @@ function addContacts(e) {
           <a class="ite__link" href="tel:123456789">+998 9${e.number}</a>
         </div>
       </div>`;
-  });
 
-  conlistAll.appendChild(li);
-
-  workArr = arr.filter((e) => {
-    if (e.categor == 'Work') {
-      conlistWork.appendChild(li);
-    }
-  })
-
-  famArr = arr.filter((e) => {
+    // famArr = arr.filter((e) => {
     if (e.categor == 'Family') {
       conlistFam.appendChild(li);
     }
-  })
+    // })
+
+    // workArr = arr.filter((e) => {
+    if (e.categor == 'Work') {
+      conlistWork.appendChild(li);
+    }
+    // })
+  });
 
   categores();
 
@@ -132,7 +121,6 @@ function addContacts(e) {
 
 function categores() {
   allBtn.addEventListener('click', () => {
-    conlistAll.classList.remove('d-none');
     conlistWork.classList.remove('d-none');
     conlistFam.classList.remove('d-none');
   })
@@ -140,12 +128,10 @@ function categores() {
   workBtn.addEventListener('click', () => {
     conlistWork.classList.remove('d-none');
     conlistFam.classList.add('d-none');
-    conlistAll.classList.add('d-none');
   })
 
   familyBtn.addEventListener('click', () => {
     conlistFam.classList.remove('d-none');
     conlistWork.classList.add('d-none');
-    conlistAll.classList.add('d-none');
   })
 }
